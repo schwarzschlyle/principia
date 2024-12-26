@@ -3,7 +3,6 @@
 
 
 
-
 ## Student UI
 
 ### Main Page Top Half
@@ -12,7 +11,15 @@ Top half of the main page consists of a road map which is a sequential graph vie
 
 Node colors: (Blue) Completed, (Green) In Progress, (Red) Roadblock, (Grey) To-Do
 
-(Insert graph specifications)
+In this section, there is an Add Task button. When clicked, it should prompt the user the following:
+
+[Task Name]
+[Link to Overleaf]
+[Task Description]
+[Task Prerequisite/s]
+
+Then, based on the task prerequisites, it should generate a clickable graph representation of the tasks. Depending on that graph view, a logic should decide if is in progress (meaning, no prerequisite or the prerequsites are completed) or To-Do (prerequisites are still in progress.)
+
 
 
 Beside the roadmap, there is a *Verification* status checkbox. If it is already adviser-verified, the checkbox is checked.
@@ -38,6 +45,7 @@ When the user clicks on a task node either from the road map graph view of the t
 [Task Name]
 [Status: {In Progress, Completed, Roadblock}]
 [Task ID: ]
+[Task Prerequisite/s]
 [Link to Overleaf:]
 [Task Description:]
 
